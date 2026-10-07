@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: black;
+        }
+
+        /* Video de fondo */
+        #video-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        /* Capa por encima del video */
+        #layout {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- VIDEO DE FONDO -->
+    <video id="video-fondo" autoplay muted loop playsinline>
+        <source src="matrix.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+    </video>
+
+    <!-- LAYOUT POR ENCIMA DEL VIDEO -->
+    <div id="layout">
+
+        <!-- Escribí acá lo que quieras -->
+
+    </div>
+
+</body>
+</html>
